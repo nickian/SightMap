@@ -10,7 +10,7 @@ function api_request(per_page, current_page) {
 	
 	// Request was successful
 	request.done(function(data) {
-		
+    	
 		console.log(data);
 		
 		// If we didn't find anything, redirect/restart to default settings
@@ -73,7 +73,7 @@ $('body').on('change', '#per-page', function() {
 	if ( Number.isInteger(parseInt($(this).val())) ) {
 		$('#loading').show();
 		per_page = $(this).val();
-		api_request(per_page, current_page);		
+		api_request(per_page, current_page);
 	}
 });
 
@@ -108,10 +108,3 @@ $(document).ready(function(){
 	$('#submit-button').hide();
 	$('#loading').hide();	
 });
-
-
-
-
-
-
-

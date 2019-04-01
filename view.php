@@ -55,12 +55,11 @@
 		    <div id="loading"><span>LOADING</span></div>
 		</div><!--content-container-->
 		<nav>
-			<a href="<?=APP_URL;?>?per-page=<?=$per_page;?>&page=1" id="restart" <?php if (isset($_GET['page']) && $_GET['page']!=1):?>style="display:inline-block;"<?php endif;?>><</a>
-			<a href="<?=APP_URL;?>?per-page=<?=$per_page;?>&page=<?=$previous_page;?>" id="previous" <?php if ($previous_page):?>style="display:inline-block;"<?php endif;?>>&#8592; Page <span><?=$previous_page;?></span></a>
+			<a href="<?=APP_URL;?>?per-page=<?=$per_page;?>&page=1" id="restart"<?php if (isset($_GET['page']) && $_GET['page']!=1):?> style="display:inline-block;"<?php endif;?>><</a>
+			<a href="<?=APP_URL;?>?per-page=<?=$per_page;?>&page=<?=$previous_page;?>" id="previous"<?php if ($previous_page):?> style="display:inline-block;"<?php endif;?>>&#8592; Page <span><?=$previous_page;?></span></a>
 			<span id="current-page">Page <?=$paging['current_page'];?></span>
-			<?php if ($next_page):?>
-			<a href="<?=APP_URL;?>?per-page=<?=$per_page;?>&page=<?=$next_page;?>" id="next">Page <span><?=$next_page;?></span> &#8594;</a>
-			<?php endif;?>
+			<a href="<?=APP_URL;?>?per-page=<?=$per_page;?>&page=<?=$next_page;?>" id="next"<?php if ($next_page):?> style="display:inline-block;"<?php endif;?>>Page <span><?=$next_page;?></span> &#8594;</a>
+			
 		</nav>
 	</main>
 	<script type="text/javascript">

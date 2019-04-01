@@ -70,11 +70,7 @@ nav span#current-page {
 	padding: 10px 10px 12px 10px;
 }
 
-#previous {
-	display: none;
-}
-
-#restart {
+#previous, #next, #restart {
 	display: none;
 }
 

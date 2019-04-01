@@ -49,8 +49,6 @@ if ( $units['status'] == 200 ) {
 		
 		if ( $paging['next_url'] != null ) {
 			$next_page = $paging['current_page'] + 1;
-		} else {
-			$next_page = null;
 		}
 		
 		if ( $paging['prev_url'] != null ) {
