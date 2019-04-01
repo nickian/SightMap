@@ -1,0 +1,168 @@
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	box-sizing: content-box;
+}
+
+body {
+	margin: 0;
+	box-sizing: content-box;
+	font-family: helvetica, arial, sans-serif;
+}
+
+ul, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	display: block;
+	padding: 7px 12px;
+	margin: 9px 5px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+}
+
+main {
+	display: block;
+	width: 90%;
+	max-width: 650px;
+	margin: auto;
+}
+
+nav {
+	text-align: center;
+}
+
+nav div {
+	display: block;
+	margin-top: 25px;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px 10px 12px 10px;
+	background: #e3e3e3;
+	color: #000;
+	text-decoration: none;
+	margin: 0;
+	font-weight: bold;
+	border-bottom: 5px solid #333;
+}
+
+nav a:hover {
+	background: #d2d2d2;
+	color: #000;
+}
+
+nav a:active {
+	border-bottom: 0;
+	position: relative;
+	top: 5px;
+}
+
+nav span#current-page {
+	color: #999;
+	padding: 10px 10px 12px 10px;
+}
+
+#previous {
+	display: none;
+}
+
+#restart {
+	display: none;
+}
+
+section {
+	float: left;
+	width: 50%;
+}
+
+@media only screen and (max-width: 570px) {
+	section {
+		width: 100%;
+	}
+}
+
+select {
+	font-size: 16px;
+}
+
+li {
+	display: block;
+	padding: 7px 12px;
+	margin: 9px 5px;
+	border: 1px solid #cccccc;
+	box-shadow: 1px 1px 3px #e2e2e2;
+	-moz-box-shadow: 1px 1px 3px #e2e2e2;
+	-webkit-box-shadow: 1px 1px 3px #e2e2e2;
+}
+
+li:hover {
+	border: 1px solid #b0b0b0;
+	box-shadow: 1px 1px 8px #bcbcbc;
+	-moz-box-shadow: 1px 1px 8px #bcbcbc;
+	-webkit-box-shadow: 1px 1px 8px #bcbcbc;
+}
+
+section#area-1 li {
+	background: #f3f2f2;
+}
+
+section#area-gt-1 header {
+	background: #507765;
+}
+
+small {
+	display: block;
+	font-size: 12px;
+	color: #999;
+	margin: 4px 0;
+}
+
+div.content-container {
+	float: left;
+	width: 100%;
+	margin-top: 25px;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+#loading {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.95);
+	text-align: center;
+}
+
+#loading span {
+	position: relative;
+	top: 75px;
+	padding: 12px 9px 9px 25px;
+	background: #6f6f6f;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 12px;
+	text-decoration: blink;
+	-webkit-animation-name: loading;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in;
+	-webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes loading {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+
